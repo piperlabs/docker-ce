@@ -1,3 +1,12 @@
 schema-version: 1.0
 name: docker-ce
 
+var:
+  user: default
+
+
+
+provision:
+  - user:
+      name: "{{ user }}"
+      group: docker
