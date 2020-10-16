@@ -8,5 +8,5 @@ var:
 
 provision:
   - user:
-      name: "{{ user }}"
+      name: "{% user %}"
       group: docker
